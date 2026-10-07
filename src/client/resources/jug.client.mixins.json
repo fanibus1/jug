@@ -3,7 +3,8 @@
 	"package": "name.modid.client.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-        "LocalPlayerAccessor"
+        "LocalPlayerAccessor",
+        "MinecraftAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1
