@@ -1,0 +1,15 @@
+package name.modid.client.mixin;
+
+import net.minecraft.client.player.LocalPlayer;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.gen.Accessor;
+
+@Mixin(LocalPlayer.class)
+public interface LocalPlayerAccessor {
+    
+    @Accessor("xRotLast")
+    float getXRotLast();
+
+    @Accessor("xRotLast")
+    void setXRotLast(float xRotLast);
+}
