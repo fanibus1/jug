@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "jug",
+  "version": "${version}",
+  "name": "jug",
+  "description": "Prepends a given command at the start of every chat message.",
+  "authors": ["fanibus"],
+  "contact": {
+    "homepage": "https://cdn.discordapp.com/emojis/1553656920353804388.webp",
+    "sources": "https://cdn.discordapp.com/emojis/1553656920353804388.webp"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/jug/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": ["name.modid.client.JugClient"]
+  },
+  "mixins": [
+    {
+      "config": "jug.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
